@@ -1,0 +1,26 @@
+## Seneca Polytechnic
+- *Teacher Assistant* | Sept'23 - Present
+- ![seneca_image](../assets/seneca_image.jpg)
+- Tags: Seneca Polytechnic
+- Badges:
+  - C/C++ [orange]
+  - OOP [red]
+  - Procedural Programming [red]
+  - Working in team [blue]
+  - Communication skills [blue]
+- List Items:
+  - Assist professors with conducting tutorials and lab sessions, increasing average mark in two courses to ~70%
+  - Helped students to reinforce their understanding of core course concepts, including demonstrating practical skills using C and C++ languages and facilitating discussions
+
+## Web Unleashed 23
+- *Volunteer - Performer Support* | Oct'23
+- ![fitc_logo](../assets/fitc_logo.png)
+- Tags: FITC
+- Badges:
+  - Working in team [blue]
+  - Communication skills [blue]
+  - Problem-solving skills [blue]
+- List Items:
+  - Played a vital role in supporting speakers during a Web Unleashed conference, ensuring their needs were met and presentations and workshops ran smoothly
+  - Provided technical assistance, and offered on-site support to speakers, contributing to the overall success of the conferences
+  - Demonstrated strong communication and problem-solving skills, fostering a positive and efficient environment for presenters
