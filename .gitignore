@@ -1,3 +1,5 @@
+# Default node stuf
 node_modules
 
+# Build directory for React
 build
