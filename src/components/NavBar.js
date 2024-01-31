@@ -13,56 +13,52 @@ import {
   useDisclosure,
   HStack,
   Link,
-} from "@chakra-ui/react";
-import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { useState } from "react";
-import ProfileArray from "./ProfileArray";
-const TbIcons = require("react-icons/tb");
+} from '@chakra-ui/react';
+import { MoonIcon, SunIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
+import ProfileArray from './ProfileArray';
+import * as TbIcons from 'react-icons/tb';
 
 export default function Nav({ color }) {
   const profile = ProfileArray();
   const colors = {
-  "blue": "#3182CE", 
-  "cyan": "#00B5D8", 
-  "gray": "#718096", 
-  "green": "#38A169", 
-  "orange": "#DD6B20", 
-  "pink": "#D53F8C", 
-  "purple": "#805AD5", 
-  "red": "#E53E3E", 
-  "teal": "#319795", 
-  "yellow": "#D69E2E"};
+    blue: '#3182CE',
+    cyan: '#00B5D8',
+    gray: '#718096',
+    green: '#38A169',
+    orange: '#DD6B20',
+    pink: '#D53F8C',
+    purple: '#805AD5',
+    red: '#E53E3E',
+    teal: '#319795',
+    yellow: '#D69E2E',
+  };
   const [scroll, setScroll] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const [isLargerThanMD] = useMediaQuery("(min-width: 48em)");
+  const [isLargerThanMD] = useMediaQuery('(min-width: 48em)');
+
+  const scrollToObjById = (objIdName) => {
+    const obj = document.querySelector(`#${objIdName}`);
+    if (obj) {
+      window.scrollTo({ top: obj.offsetTop - 80, behavior: 'smooth' });
+    } else {
+      throw new Error('Element is not there! Obj id name is ' + objIdName);
+    }
+  };
+
   const scrollToHero = () => {
-  const heroSection = document.querySelector("#hero");
-    heroSection.scrollIntoView({ behavior: "smooth" });
+    const heroSection = document.querySelector('#hero');
+    heroSection.scrollIntoView({ behavior: 'smooth' });
   };
-  const scrollToAbout = () => {
-    const aboutSection = document.querySelector("#about");
-    aboutSection.scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToExperience = () => {
-    const experienceSection = document.querySelector("#experience");
-    experienceSection.scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToProjects = () => {
-    const projectsSection = document.querySelector("#projects");
-    projectsSection.scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToContact = () => {
-    const contactSection = document.querySelector("#contact");
-    contactSection.scrollIntoView({ behavior: "smooth" });
-  };
+
   const changeScroll = () =>
     document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
       ? setScroll(true)
       : setScroll(false);
 
-  window.addEventListener("scroll", changeScroll);
+  window.addEventListener('scroll', changeScroll);
 
   const TbLetterComponents = [];
 
@@ -75,17 +71,16 @@ export default function Nav({ color }) {
   return (
     <>
       <Flex
-        bg={useColorModeValue("gray.100", "gray.900")}
+        bg={useColorModeValue('gray.100', 'gray.900')}
         px={4}
         h={16}
-        boxShadow={scroll ? "base" : "none"}
+        boxShadow={scroll ? 'base' : 'none'}
         zIndex="sticky"
         position="fixed"
         as="header"
-        alignItems={"center"}
-        justifyContent={"space-between"}
-        w="100%"
-      >
+        alignItems={'center'}
+        justifyContent={'space-between'}
+        w="100%">
         <Link onClick={scrollToHero}>
           <HStack>
             {TbLetterComponents.map((Component, index) => (
@@ -94,20 +89,20 @@ export default function Nav({ color }) {
           </HStack>
         </Link>
 
-        <Flex alignItems={"center"}>
-          <Stack direction={"row"} spacing={7}>
+        <Flex alignItems={'center'}>
+          <Stack direction={'row'} spacing={7}>
             {isLargerThanMD ? (
               <>
-                <Button variant="ghost" onClick={scrollToAbout}>
+                <Button variant="ghost" onClick={() => scrollToObjById('about')}>
                   About
                 </Button>
-                <Button variant="ghost" onClick={scrollToExperience}>
+                <Button variant="ghost" onClick={() => scrollToObjById('experience')}>
                   Experience
                 </Button>
-                <Button variant="ghost" onClick={scrollToProjects}>
+                <Button variant="ghost" onClick={() => scrollToObjById('projects')}>
                   Projects
                 </Button>
-                <Button variant="ghost" onClick={scrollToContact}>
+                <Button variant="ghost" onClick={() => scrollToObjById('contact')}>
                   Contact
                 </Button>
               </>
@@ -115,32 +110,28 @@ export default function Nav({ color }) {
               <></>
             )}
             <Button onClick={toggleColorMode}>
-              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
 
             {isLargerThanMD ? (
               <></>
             ) : (
               <>
-                <Button
-                  as={IconButton}
-                  icon={<HamburgerIcon />}
-                  onClick={onOpen}
-                ></Button>
+                <Button as={IconButton} icon={<HamburgerIcon />} onClick={onOpen}></Button>
                 <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
                   <DrawerOverlay />
                   <DrawerContent>
                     <DrawerBody>
-                      <Button variant="ghost" onClick={scrollToAbout}>
+                      <Button variant="ghost" onClick={() => scrollToObjById('about')}>
                         About
                       </Button>
-                      <Button variant="ghost" onClick={scrollToExperience}>
+                      <Button variant="ghost" onClick={() => scrollToObjById('experience')}>
                         Experience
                       </Button>
-                      <Button variant="ghost" onClick={scrollToProjects}>
+                      <Button variant="ghost" onClick={() => scrollToObjById('projects')}>
                         Projects
                       </Button>
-                      <Button variant="ghost" onClick={scrollToContact}>
+                      <Button variant="ghost" onClick={() => scrollToObjById('contact')}>
                         Contact
                       </Button>
                     </DrawerBody>

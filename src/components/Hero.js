@@ -8,21 +8,17 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-} from "@chakra-ui/react";
-import ProfileArray from "./ProfileArray";
+} from '@chakra-ui/react';
+import ProfileArray from './ProfileArray';
 
 export default function Header({ color }) {
   const profile = ProfileArray();
   const scrollToContact = () => {
-    const contactSection = document.querySelector("#contact");
-    contactSection.scrollIntoView({ behavior: "smooth" });
+    const contactSection = document.querySelector('#contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
   };
   const linkedin = () => {
-    window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+    window.open(`${profile.linkedin}`, '_blank', 'noreferrer,noopener');
   };
   return (
     <>
@@ -33,74 +29,61 @@ export default function Header({ color }) {
         />
       </Heading>
 
-      <Container maxW={"3xl"} id="hero">
+      <Container maxW={'3xl'} id="hero">
         <Stack
           as={Box}
-          textAlign={"center"}
+          textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 20, md: 36 }}
-          pt={{ base: 36, md: 52 }}
-        >
+          pt={{ base: 36, md: 52 }}>
           <Heading
             fontWeight={600}
-            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-            lineHeight={"110%"}
-          >
+            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'110%'}>
             {profile.headerName} <br />
-            <Text as={"span"} color={`${color}.400`}>
+            <Text as={'span'} color={`${color}.400`}>
               {profile.headerRole}
             </Text>
           </Heading>
-          <Text
-            color={"gray.500"}
-            fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
-          >
+          <Text color={'gray.500'} fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }}>
             {profile.headerDesc}
           </Text>
           <Stack
-            direction={"column"}
+            direction={'column'}
             spacing={3}
-            align={"center"}
-            alignSelf={"center"}
-            position={"relative"}
-          >
+            align={'center'}
+            alignSelf={'center'}
+            position={'relative'}>
             <Button
               colorScheme={color}
               bg={`${color}.400`}
-              rounded={"full"}
+              rounded={'full'}
               px={6}
               _hover={{
                 bg: `${color}.500`,
               }}
-              onClick={linkedin}
-            >
-              Let's connect!
+              onClick={linkedin}>
+              Let&apos;s connect!
             </Button>
-            <Button
-              variant={"link"}
-              colorScheme={"blue"}
-              size={"sm"}
-              onClick={scrollToContact}
-            >
+            <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={scrollToContact}>
               Contact Me
             </Button>
             <Box>
               <Icon
                 as={Arrow}
-                color={useColorModeValue("gray.800", "gray.300")}
+                color={useColorModeValue('gray.800', 'gray.300')}
                 w={71}
-                position={"absolute"}
+                position={'absolute'}
                 right={-71}
-                top={"10px"}
+                top={'10px'}
               />
               <Text
-                fontSize={"lg"}
-                fontFamily={"Caveat"}
-                position={"absolute"}
-                right={"-85px"}
-                top={"-15px"}
-                transform={"rotate(10deg)"}
-              >
+                fontSize={'lg'}
+                fontFamily={'Caveat'}
+                position={'absolute'}
+                right={'-85px'}
+                top={'-15px'}
+                transform={'rotate(10deg)'}>
                 Click me!
               </Text>
             </Box>
@@ -112,8 +95,8 @@ export default function Header({ color }) {
 }
 
 const Arrow = createIcon({
-  displayName: "Arrow",
-  viewBox: "0 0 72 24",
+  displayName: 'Arrow',
+  viewBox: '0 0 72 24',
   path: (
     <path
       fillRule="evenodd"

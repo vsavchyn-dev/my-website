@@ -18,17 +18,17 @@ import {
   Button,
   ButtonGroup,
   Center,
-} from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Fade } from "react-awesome-reveal";
-import { useState, useEffect } from "react";
-import ExperienceArray from "./ExperienceArray";
-import TagsArray from "./TagsArray";
+} from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Fade } from 'react-awesome-reveal';
+import { useState, useEffect } from 'react';
+import ExperienceArray from './ExperienceArray';
+import TagsArray from './TagsArray';
 
 export default function Experience({ color }) {
   const experience = ExperienceArray();
-  const options = TagsArray("ExperienceTags");
-  const [selected, setSelected] = useState("");
+  const options = TagsArray('ExperienceTags');
+  const [selected, setSelected] = useState('');
 
   useEffect(() => {
     if (options.length > 0) {
@@ -42,13 +42,12 @@ export default function Experience({ color }) {
 
   return (
     <>
-      <Container maxW={"3xl"} id="experience">
+      <Container maxW={'3xl'} id="experience">
         <Stack
           as={Box}
-          textAlign={"center"}
+          textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
-        >
+          pb={{ base: 20, md: 36 }}>
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
@@ -63,9 +62,8 @@ export default function Experience({ color }) {
               {options.map((option) => (
                 <Button
                   key={option.value}
-                  colorScheme={selected === option.value ? `${color}` : "gray"}
-                  onClick={() => handleSelected(option.value)}
-                >
+                  colorScheme={selected === option.value ? `${color}` : 'gray'}
+                  onClick={() => handleSelected(option.value)}>
                   {option.value}
                 </Button>
               ))}
@@ -112,10 +110,7 @@ export default function Experience({ color }) {
                     <CardFooter>
                       <HStack spacing={2}>
                         {exp.badges.map((badge) => (
-                          <Badge
-                            key={badge.name}
-                            colorScheme={badge.colorScheme}
-                          >
+                          <Badge key={badge.name} colorScheme={badge.colorScheme}>
                             {badge.name}
                           </Badge>
                         ))}
