@@ -33,6 +33,7 @@ const parseProfile = (mdContent) => {
           break;
         case 'Contact':
           profile.contact = lines[++i].trim();
+          // eslint-disable-next-line no-case-declarations
           const contactLinks = ['LinkedIn', 'GitHub', 'Email'];
           for (const link of contactLinks) {
             const linkLine = lines[++i].substr(2).trim();
