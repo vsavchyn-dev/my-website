@@ -73,7 +73,7 @@ export default function Experience({ color }) {
             {experience
               .filter((exp) => exp.tags.includes(selected))
               .map((exp) => (
-                <Fade key={exp.companyID} bottom>
+                <Fade key={exp.companyID} bottom triggerOnce>
                   <Card key={exp.companyID} size="sm">
                     <CardHeader>
                       <Flex justifyContent="space-between">
