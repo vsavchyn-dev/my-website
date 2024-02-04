@@ -52,7 +52,7 @@ export default function Projects({ color }) {
           </Stack>
           <Stack px={4} spacing={4}>
             {projects.map((project) => (
-              <Fade key={project.projectID} bottom>
+              <Fade key={project.projectID} bottom triggerOnce>
                 <Card
                   key={project.name}
                   direction={{
@@ -69,9 +69,9 @@ export default function Projects({ color }) {
 
                       <HStack py={2}>
                         {project.buttons.map((button) => (
-                          <a key={button.text} href={button.href}>
+                          <Link key={button.text} href={button.href} isExternal>
                             <Button color={`${color}.400`}>{button.text}</Button>
-                          </a>
+                          </Link>
                         ))}
                       </HStack>
                       <HStack pt={4} spacing={2}>
@@ -117,7 +117,7 @@ export default function Projects({ color }) {
                 }
               })
               .map((other) => (
-                <Fade bottom key={other.name}>
+                <Fade bottom key={other.name} triggerOnce>
                   <Card key={other.name}>
                     <Stack>
                       <CardBody align="left" h={[null, '40vh']}>
@@ -129,7 +129,11 @@ export default function Projects({ color }) {
 
                         <HStack spacing={2}>
                           {other.buttons.map((button) => (
-                            <Link key={button.text} href={button.href} color={`${color}.400`}>
+                            <Link
+                              key={button.text}
+                              href={button.href}
+                              isExternal
+                              color={`${color}.400`}>
                               {button.text}
                             </Link>
                           ))}
