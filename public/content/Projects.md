@@ -1,5 +1,5 @@
-## Metropolian Museum
-Full-stack web app that fetches data from Metropolitan API to check their exhibits!
+## "The Met" exhibits
+Full-stack web app that fetches data from The Metropolitan Museum of Arts via their API to check their exhibits!
 - ![next-museum](../assets/next-museum.gif)
 - Tags: Web Dev
 - Badges:
@@ -13,20 +13,20 @@ Full-stack web app that fetches data from Metropolitan API to check their exhibi
   - GitHub(back-end) [https://github.com/vsavchyn-dev/user_api]
 
 ## Mesmerizing shader
-This shader creates an interesting scene that reacts to mouse movement. What're you waiting for? Check it out by clicking the button below!
+Interesting shader that reacts to mouse movement. What're you waiting for? Check it out by clicking the button below!
 - ![shader-raycast](../assets/shader-raycast.gif)
-- Tags: Game Dev, Graphic Programming
+- Tags: Game Dev
 - Badges:
-  - OpenGL [orange]
-  - Raycasting [red]
-  - Graphic Programming [blue]
+  - GLSL [orange]
+  - Raymarching [red]
+  - Graphics Programming [blue]
 - Buttons:
   - ShaderToy [https://www.shadertoy.com/view/XcS3zy]
 
 ## Simplified blockchain
-This project is a simple implementation of a blockchain using C++. I've implemented key features, like Block/Blockchain creation & validation.
+Simple implementation of a blockchain using C++. I've implemented key features, like Block/Blockchain creation & validation.
 - ![simplified-blockchain](../assets/simplified-blockchain.gif)
-- Tags: Software Development
+- Tags: Software Engineering
 - Badges:
   - C++17 [orange]
   - C++20 [orange]
@@ -34,6 +34,6 @@ This project is a simple implementation of a blockchain using C++. I've implemen
   - vcpkg [orange]
   - Blockchain [red]
   - Data Structures [red]
-  - Software Development [blue]
+  - Software Engineering [blue]
 - Buttons:
   - GitHub [https://github.com/vsavchyn-dev/blockchain]
