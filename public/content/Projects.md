@@ -1,33 +1,39 @@
-## Next-Museum
-Front-end app that fetches data from Metropolitan API to check their exponates!
-- ![museum-api-link](https://via.placeholder.com/600x200)
+## Metropolian Museum
+Full-stack web app that fetches data from Metropolitan API to check their exhibits!
+- ![next-museum](../assets/next-museum.gif)
 - Tags: Web Dev
 - Badges:
-  - NextJS [orange]
-  - ReactJS [orange]
+  - NextJS/ReactJS [orange]
   - ExpressJS [orange]
   - MySQL [orange]
-  - MongoDB [green]
+  - MongoDB [orange]
 - Buttons:
-  - Visit Website [https://next-museum-e4iivsrsx-vlads-projects-da5e0309.vercel.app]
+  - Visit Website [https://next-museum-ruby.vercel.app]
   - GitHub(front-end) [https://github.com/vsavchyn-dev/NEXT_MUSEUM]
   - GitHub(back-end) [https://github.com/vsavchyn-dev/user_api]
 
-## Raycasting futuristic shader
-LOOK AT THIS DUUUDE!!!
-- ![shader-raycast](../assets/shadertoyExmp.gif)
-- Tags: Game Dev/Graphic Programming
+## Mesmerizing shader
+This shader creates an interesting scene that reacts to mouse movement. What're you waiting for? Check it out by clicking the button below!
+- ![shader-raycast](../assets/shader-raycast.gif)
+- Tags: Game Dev, Graphic Programming
 - Badges:
   - OpenGL [orange]
   - Raycasting [red]
+  - Graphic Programming [blue]
 - Buttons:
   - ShaderToy [https://www.shadertoy.com/view/XcS3zy]
 
-## Project C
-Description
-- ![600x200](https://via.placeholder.com/600x200)
-- Tags: Category 3
+## Simplified blockchain
+This project is a simple implementation of a blockchain using C++. I've implemented key features, like Block/Blockchain creation & validation.
+- ![simplified-blockchain](../assets/simplified-blockchain.gif)
+- Tags: Software Development
 - Badges:
-  - Badge [blue]
+  - C++17 [orange]
+  - C++20 [orange]
+  - CMake [orange]
+  - vcpkg [orange]
+  - Blockchain [red]
+  - Data Structures [red]
+  - Software Development [blue]
 - Buttons:
-  - Link [https://example.com]
+  - GitHub [https://github.com/vsavchyn-dev/blockchain]

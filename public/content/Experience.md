@@ -1,6 +1,6 @@
 ## Seneca Polytechnic
 - *Teacher Assistant* | Sept'23 - Present
-- ![seneca_image](https://shorturl.at/fKV24)
+- ![seneca-image](../assets/seneca-image.jpg)
 - Tags: All Seneca Polytechnic
 - Badges:
   - C/C++ [orange]
@@ -12,7 +12,7 @@
 
 ## Web Unleashed 23
 - *Volunteer - Performer Support* | Oct'23
-- ![fitc_logo](https://shorturl.at/adiz6)
+- ![fitc-logo](../assets/fitc-logo.png)
 - Tags: All FITC
 - Badges:
   - Volunteering [green]

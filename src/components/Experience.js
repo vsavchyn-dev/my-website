@@ -58,7 +58,7 @@ export default function Experience({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Center px={4}>
-            <ButtonGroup variant="outline">
+            <ButtonGroup variant="outline" flexWrap={'wrap'}>
               {options.map((option) => (
                 <Button
                   key={option.value}
@@ -107,8 +107,8 @@ export default function Experience({ color }) {
                         </List>
                       </Flex>
                     </CardBody>
-                    <CardFooter>
-                      <HStack spacing={2}>
+                    <CardFooter overflow="auto">
+                      <HStack flexWrap={'wrap'} pt={4}>
                         {exp.badges.map((badge) => (
                           <Badge key={badge.name} colorScheme={badge.colorScheme}>
                             {badge.name}
