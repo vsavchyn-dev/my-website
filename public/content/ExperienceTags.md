@@ -1,3 +1,2 @@
-All
 Seneca Polytechnic
 FITC
