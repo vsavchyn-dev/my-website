@@ -1,10 +1,11 @@
 ## Seneca Polytechnic
 - *Teacher Assistant* | Sept'23 - Present
 - ![seneca-image](../assets/seneca-image.jpg)
-- Tags: All Seneca Polytechnic
+- Tags: Seneca Polytechnic
 - Badges:
   - C/C++ [orange]
   - Teaching [green]
+  - Communication skills [blue]
   - In-progress [yellow]
 - List Items:
   - Assist professors with conducting tutorials and lab sessions, increasing average mark in two courses to ~70%
@@ -13,7 +14,7 @@
 ## Web Unleashed 23
 - *Volunteer - Performer Support* | Oct'23
 - ![fitc-logo](../assets/fitc-logo.png)
-- Tags: All FITC
+- Tags: FITC
 - Badges:
   - Volunteering [green]
   - Communication skills [blue]
