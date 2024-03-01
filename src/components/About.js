@@ -3,6 +3,7 @@ import ProfileArray from './ProfileArray';
 
 export default function About({ color }) {
   const profile = ProfileArray();
+
   return (
     <>
       <Container maxW={'3xl'} id="about">
@@ -20,9 +21,11 @@ export default function About({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Text color={'gray.600'} fontSize={'xl'} px={4}>
-            {profile.about}
-          </Text>
+          <Text
+            color={'gray.500'}
+            fontSize={'xl'}
+            px={12}
+            dangerouslySetInnerHTML={{ __html: profile.about }}></Text>
         </Stack>
       </Container>
     </>
