@@ -47,7 +47,7 @@ Web app/dashboard for user to check their posts (like Instagram).
 - Tags: Web Dev
 - Badges:
   - ExpressJS [orange]
-  - HanglebarsJS [orange]
+  - HandlebarsJS [orange]
   - Full-stack dev [blue]
 - Buttons:
   - GitHub [https://github.com/vsavchyn-dev/Blog-A-Gramm]
