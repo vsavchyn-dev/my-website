@@ -15,6 +15,7 @@ import {
   Badge,
   Link,
   Center,
+  Flex,
 } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import { useState } from 'react';
@@ -74,13 +75,18 @@ export default function Projects({ color }) {
                           </Link>
                         ))}
                       </HStack>
-                      <HStack pt={4} spacing={2}>
+                      <Flex flexWrap="wrap" pt={4}>
                         {project.badges.map((badge) => (
-                          <Badge key={badge.text} colorScheme={badge.colorScheme}>
+                          <Badge
+                            mt={0.5}
+                            mr={2}
+                            mb={0.5}
+                            key={badge.text}
+                            colorScheme={badge.colorScheme}>
                             {badge.text}
                           </Badge>
                         ))}
-                      </HStack>
+                      </Flex>
                     </CardBody>
                   </Stack>
                 </Card>
@@ -91,14 +97,18 @@ export default function Projects({ color }) {
             Other Projects
           </Text>
           <Center px={4}>
-            <ButtonGroup variant="outline">
+            <ButtonGroup variant="outline" flexWrap="wrap" justifyContent="center">
               <Button
+                mt={0.5}
+                mb={0.5}
                 colorScheme={selected === 'All' ? `${color}` : 'gray'}
                 onClick={() => handleSelected('All')}>
                 All
               </Button>
               {options.map((option) => (
                 <Button
+                  mt={0.5}
+                  mb={0.5}
                   colorScheme={selected === option.value ? `${color}` : 'gray'}
                   onClick={() => handleSelected(option.value)}
                   key={option.value}>
@@ -119,34 +129,41 @@ export default function Projects({ color }) {
               .map((other) => (
                 <Fade bottom key={other.name} triggerOnce>
                   <Card key={other.name}>
-                    <Stack>
-                      <CardBody align="left" h={[null, '40vh']}>
+                    <CardBody align="left" h={[null, '40vh']}>
+                      <Stack>
                         <Heading size="sm">{other.name}</Heading>
 
                         <Text fontSize="sm" py={2}>
                           {other.description}
                         </Text>
 
-                        <HStack spacing={2}>
+                        <Flex flexWrap="wrap">
                           {other.buttons.map((button) => (
                             <Link
                               key={button.text}
                               href={button.href}
                               isExternal
+                              mr={2}
+                              mb={0.5}
                               color={`${color}.400`}>
                               {button.text}
                             </Link>
                           ))}
-                        </HStack>
-                        <HStack flexWrap="wrap" pt={4} spacing={2}>
+                        </Flex>
+                        <Flex flexWrap="wrap">
                           {other.badges.map((badge) => (
-                            <Badge my={2} key={badge.text} colorScheme={badge.colorScheme}>
+                            <Badge
+                              mt={0.5}
+                              mr={2}
+                              mb={0.5}
+                              key={badge.text}
+                              colorScheme={badge.colorScheme}>
                               {badge.text}
                             </Badge>
                           ))}
-                        </HStack>
-                      </CardBody>
-                    </Stack>
+                        </Flex>
+                      </Stack>
+                    </CardBody>
                   </Card>
                 </Fade>
               ))}

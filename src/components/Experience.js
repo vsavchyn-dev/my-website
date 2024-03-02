@@ -58,9 +58,11 @@ export default function Experience({ color }) {
             <Divider orientation="horizontal" />
           </Stack>
           <Center px={4}>
-            <ButtonGroup variant="outline" flexWrap={'wrap'}>
+            <ButtonGroup variant="outline" flexWrap="wrap" justifyContent="center">
               {options.map((option) => (
                 <Button
+                  mt={0.5}
+                  mb={0.5}
                   key={option.value}
                   colorScheme={selected === option.value ? `${color}` : 'gray'}
                   onClick={() => handleSelected(option.value)}>
@@ -108,13 +110,18 @@ export default function Experience({ color }) {
                       </Flex>
                     </CardBody>
                     <CardFooter overflow="auto">
-                      <HStack flexWrap={'wrap'} pt={4}>
+                      <Flex flexWrap={'wrap'} pt={1}>
                         {exp.badges.map((badge) => (
-                          <Badge key={badge.name} colorScheme={badge.colorScheme}>
+                          <Badge
+                            key={badge.name}
+                            mt={0.5}
+                            mr={2}
+                            mb={0.5}
+                            colorScheme={badge.colorScheme}>
                             {badge.name}
                           </Badge>
                         ))}
-                      </HStack>
+                      </Flex>
                     </CardFooter>
                   </Card>
                 </Fade>
