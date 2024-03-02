@@ -17,9 +17,6 @@ export default function Header({ color }) {
     const contactSection = document.querySelector('#contact');
     contactSection.scrollIntoView({ behavior: 'smooth' });
   };
-  const linkedin = () => {
-    window.open(`${profile.linkedin}`, '_blank', 'noreferrer,noopener');
-  };
   return (
     <>
       <Heading>
@@ -34,7 +31,7 @@ export default function Header({ color }) {
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
+          pb={{ base: 70, md: 36 }}
           pt={{ base: 36, md: 52 }}>
           <Heading
             fontWeight={600}
@@ -62,11 +59,8 @@ export default function Header({ color }) {
               _hover={{
                 bg: `${color}.500`,
               }}
-              onClick={linkedin}>
+              onClick={scrollToContact}>
               Let&apos;s connect!
-            </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'} onClick={scrollToContact}>
-              Contact Me
             </Button>
             <Box>
               <Icon

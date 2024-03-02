@@ -11,16 +11,18 @@ import {
   IconButton,
   useMediaQuery,
   useDisclosure,
-  HStack,
   Link,
+  Image,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon, HamburgerIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
 import ProfileArray from './ProfileArray';
 import * as TbIcons from 'react-icons/tb';
 
+// eslint-disable-next-line no-unused-vars
 export default function Nav({ color }) {
   const profile = ProfileArray();
+  // eslint-disable-next-line no-unused-vars
   const colors = {
     blue: '#3182CE',
     cyan: '#00B5D8',
@@ -82,11 +84,7 @@ export default function Nav({ color }) {
         justifyContent={'space-between'}
         w="100%">
         <Link onClick={scrollToHero}>
-          <HStack>
-            {TbLetterComponents.map((Component, index) => (
-              <Component key={index} color={colors[color]} />
-            ))}
-          </HStack>
+          <Image boxSize="36px" src="../favicon.svg" />
         </Link>
 
         <Flex alignItems={'center'}>

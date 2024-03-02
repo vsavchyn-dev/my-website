@@ -41,7 +41,7 @@ export default function Projects({ color }) {
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}>
+          pb={{ base: 70, md: 36 }}>
           <Stack align="center" direction="row" p={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
@@ -79,7 +79,7 @@ export default function Projects({ color }) {
                         {project.badges.map((badge) => (
                           <Badge
                             mt={0.5}
-                            mr={2}
+                            mr={1}
                             mb={0.5}
                             key={badge.text}
                             colorScheme={badge.colorScheme}>
@@ -154,7 +154,7 @@ export default function Projects({ color }) {
                           {other.badges.map((badge) => (
                             <Badge
                               mt={0.5}
-                              mr={2}
+                              mr={1}
                               mb={0.5}
                               key={badge.text}
                               colorScheme={badge.colorScheme}>

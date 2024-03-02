@@ -47,7 +47,7 @@ export default function Experience({ color }) {
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}>
+          pb={{ base: 70, md: 36 }}>
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
@@ -86,9 +86,7 @@ export default function Experience({ color }) {
                             <Text>{exp.position}</Text>
                           </Box>
                         </HStack>
-                        <Text px={2} fontWeight={300}>
-                          {exp.duration}
-                        </Text>
+                        <Text px={2}>{exp.duration}</Text>
                       </Flex>
                     </CardHeader>
                     <CardBody>
