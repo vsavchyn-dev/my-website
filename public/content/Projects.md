@@ -3,10 +3,12 @@ Full-stack web app that fetches data from The Metropolitan Museum of Arts via th
 - ![next-museum](../assets/next-museum.gif)
 - Tags: Web Dev
 - Badges:
-  - NextJS/ReactJS [orange]
+  - NextJS [orange]
+  - ReactJS [orange]
   - ExpressJS [orange]
   - MySQL [orange]
   - MongoDB [orange]
+  - Full-stack dev [blue]
 - Buttons:
   - Visit Website [https://next-museum-ruby.vercel.app]
   - GitHub(front-end) [https://github.com/vsavchyn-dev/NEXT_MUSEUM]

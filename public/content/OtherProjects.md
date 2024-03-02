@@ -52,8 +52,8 @@ Web app/dashboard for user to check their posts (like Instagram).
 - Buttons:
   - GitHub [https://github.com/vsavchyn-dev/Blog-A-Gramm]
 
-## Mailing delivery sim
-A simulation of mailing trucks delivery route builder.
+## Mail delivery simulator
+A simulation of mailing truck's delivery route builder.
 - Tags: Software Engineering
 - Badges:
   - C++14 [orange]
