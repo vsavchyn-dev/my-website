@@ -10,7 +10,6 @@ Full-stack web app that fetches data from The Metropolitan Museum of Arts via th
 - Buttons:
   - Visit Website [https://next-museum-ruby.vercel.app]
   - GitHub(front-end) [https://github.com/vsavchyn-dev/NEXT_MUSEUM]
-  - GitHub(back-end) [https://github.com/vsavchyn-dev/user_api]
 
 ## Mesmerizing shader
 Interesting shader that reacts to mouse movement. What're you waiting for? Check it out by clicking the button below!
