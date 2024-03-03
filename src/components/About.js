@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
-import { Divider, Stack, Text, Container, Box, HStack } from '@chakra-ui/react';
+import { Divider, Stack, Text, Container, Box, HStack, useColorModeValue } from '@chakra-ui/react';
 import ProfileArray from './ProfileArray';
 
-export default function About({ color }) {
+export default function About({ whiteModeColor, blackModeColor }) {
   const profile = ProfileArray();
-
+  const defaultColor = useColorModeValue(`${whiteModeColor}.400`, `${blackModeColor}.400`)
   return (
     <>
       <Container maxW={'3xl'} id="about">
@@ -15,7 +15,7 @@ export default function About({ color }) {
           pb={{ base: 70, md: 36 }}>
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text color={defaultColor} fontWeight={800}>
                 01
               </Text>
               <Text fontWeight={800}>About</Text>

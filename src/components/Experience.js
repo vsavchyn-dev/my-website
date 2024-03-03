@@ -18,6 +18,7 @@ import {
   Button,
   ButtonGroup,
   Center,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Fade } from 'react-awesome-reveal';
@@ -25,10 +26,14 @@ import { useState, useEffect } from 'react';
 import ExperienceArray from './ExperienceArray';
 import TagsArray from './TagsArray';
 
-export default function Experience({ color }) {
+export default function Experience({ whiteModeColor, blackModeColor }) {
   const experience = ExperienceArray();
   const options = TagsArray('ExperienceTags');
   const [selected, setSelected] = useState('');
+
+  const simpleColor = useColorModeValue(whiteModeColor, blackModeColor);
+  const defaultColor = useColorModeValue(`${whiteModeColor}.400`, `${blackModeColor}.400`);
+  const hooverColor = useColorModeValue(`${whiteModeColor}.500`, `${blackModeColor}.500`);
 
   useEffect(() => {
     if (options.length > 0) {
@@ -50,7 +55,7 @@ export default function Experience({ color }) {
           pb={{ base: 70, md: 36 }}>
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text color={defaultColor} fontWeight={800}>
                 02
               </Text>
               <Text fontWeight={800}>Experience</Text>
@@ -64,7 +69,7 @@ export default function Experience({ color }) {
                   mt={0.5}
                   mb={0.5}
                   key={option.value}
-                  colorScheme={selected === option.value ? `${color}` : 'gray'}
+                  colorScheme={selected === option.value ? `${simpleColor}` : 'gray'}
                   onClick={() => handleSelected(option.value)}>
                   {option.value}
                 </Button>
@@ -95,11 +100,7 @@ export default function Experience({ color }) {
                           {exp.listItems.map((item, index) => (
                             <ListItem key={index}>
                               <Text align="left">
-                                <ListIcon
-                                  boxSize={6}
-                                  as={ChevronRightIcon}
-                                  color={`${color}.500`}
-                                />
+                                <ListIcon boxSize={6} as={ChevronRightIcon} color={hooverColor} />
                                 {item}
                               </Text>
                             </ListItem>

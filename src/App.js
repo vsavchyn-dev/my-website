@@ -13,16 +13,17 @@ function App() {
   // blue, cyan, gray, green, orange, pink, purple, red, teal, yellow
 
   // edit this variable to change the color theme
-  const color = 'yellow';
+  const color = 'blue';
+  const blackColor = 'yellow';
 
   return (
     <>
       <Nav color={color} />
-      <Header color={color} />
-      <About color={color} />
-      <Experience color={color} />
-      <Projects color={color} />
-      <Contact color={color} />
+      <Header whiteModeColor={color} blackModeColor={blackColor} />
+      <About whiteModeColor={color} blackModeColor={blackColor} />
+      <Experience whiteModeColor={color} blackModeColor={blackColor} />
+      <Projects whiteModeColor={color} blackModeColor={blackColor} />
+      <Contact whiteModeColor={color} blackModeColor={blackColor} />
       <Footer />
     </>
   );

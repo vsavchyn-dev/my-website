@@ -16,6 +16,7 @@ import {
   Link,
   Center,
   Flex,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import { useState } from 'react';
@@ -23,12 +24,15 @@ import ProjectsArray from './ProjectsArray';
 import OtherProjectsArray from './OtherProjectsArray';
 import TagsArray from './TagsArray';
 
-export default function Projects({ color }) {
+export default function Projects({ whiteModeColor, blackModeColor }) {
   const projects = ProjectsArray();
   const others = OtherProjectsArray();
   const options = TagsArray('ProjectsTags');
 
   const [selected, setSelected] = useState('All');
+
+  const simpleColor = useColorModeValue(whiteModeColor, blackModeColor);
+  const defaultColor = useColorModeValue(`${whiteModeColor}.400`, `${blackModeColor}.400`);
 
   const handleSelected = (value) => {
     setSelected(value);
@@ -44,7 +48,7 @@ export default function Projects({ color }) {
           pb={{ base: 70, md: 36 }}>
           <Stack align="center" direction="row" p={4}>
             <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
+              <Text color={defaultColor} fontWeight={800}>
                 03
               </Text>
               <Text fontWeight={800}>Projects</Text>
@@ -71,7 +75,7 @@ export default function Projects({ color }) {
                       <HStack py={2}>
                         {project.buttons.map((button) => (
                           <Link key={button.text} href={button.href} isExternal>
-                            <Button color={`${color}.400`}>{button.text}</Button>
+                            <Button color={defaultColor}>{button.text}</Button>
                           </Link>
                         ))}
                       </HStack>
@@ -101,7 +105,7 @@ export default function Projects({ color }) {
               <Button
                 mt={0.5}
                 mb={0.5}
-                colorScheme={selected === 'All' ? `${color}` : 'gray'}
+                colorScheme={selected === 'All' ? `${simpleColor}` : 'gray'}
                 onClick={() => handleSelected('All')}>
                 All
               </Button>
@@ -109,7 +113,7 @@ export default function Projects({ color }) {
                 <Button
                   mt={0.5}
                   mb={0.5}
-                  colorScheme={selected === option.value ? `${color}` : 'gray'}
+                  colorScheme={selected === option.value ? `${simpleColor}` : 'gray'}
                   onClick={() => handleSelected(option.value)}
                   key={option.value}>
                   {option.value}
@@ -145,7 +149,7 @@ export default function Projects({ color }) {
                               isExternal
                               mr={2}
                               mb={0.5}
-                              color={`${color}.400`}>
+                              color={defaultColor}>
                               {button.text}
                             </Link>
                           ))}

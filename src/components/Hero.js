@@ -11,12 +11,15 @@ import {
 } from '@chakra-ui/react';
 import ProfileArray from './ProfileArray';
 
-export default function Header({ color }) {
+export default function Header({ whiteModeColor, blackModeColor }) {
   const profile = ProfileArray();
   const scrollToContact = () => {
     const contactSection = document.querySelector('#contact');
     contactSection.scrollIntoView({ behavior: 'smooth' });
   };
+  const defaultColor = useColorModeValue(`${whiteModeColor}.400`, `${blackModeColor}.400`);
+  const hooverColor = useColorModeValue(`${whiteModeColor}.500`, `${blackModeColor}.500`);
+
   return (
     <>
       <Heading>
@@ -38,7 +41,7 @@ export default function Header({ color }) {
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
             {profile.headerName} <br />
-            <Text as={'span'} color={`${color}.400`}>
+            <Text as={'span'} color={defaultColor}>
               {profile.headerRole}
             </Text>
           </Heading>
@@ -52,12 +55,12 @@ export default function Header({ color }) {
             alignSelf={'center'}
             position={'relative'}>
             <Button
-              colorScheme={color}
-              bg={`${color}.400`}
+              colorScheme={useColorModeValue(whiteModeColor, blackModeColor)}
+              bg={defaultColor}
               rounded={'full'}
               px={6}
               _hover={{
-                bg: `${color}.500`,
+                bg: hooverColor,
               }}
               onClick={scrollToContact}>
               Let&apos;s connect!
