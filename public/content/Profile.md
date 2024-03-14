@@ -7,7 +7,7 @@
 - ocasionally gamer
 
 ## About
-A Computer Programming & Analysis student from Seneca Polytechnic. Currently based in Toronto, ON. I specialize in <b><u>C++</u></b>, <b><u>Java</u></b>,  <b><u>Python</u></b>, and <b><u>JavaScript</u></b>.
+I'm Vlad, a passionate Software Engineer student currently studying Computer Programming & Analysis student at Seneca Polytechnic. I'm honing my skills in <b><u>C++</u></b>, <b><u>Java</u></b>,  <b><u>Python</u></b>, and <b><u>JavaScript</u></b> to build innovative and presonally challanging applications. When I'm not coding, you might find me exploring new technologies, hiking, or playing games. Currently, I play Cry of Fear and Risk of Rain 2. Also, check out the fun side projects that I've built in my free time below!
 
 ## Contact
 Don't forget to check GitHub and other links!
