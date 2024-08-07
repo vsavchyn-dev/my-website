@@ -2,7 +2,7 @@
 
 # Portfolio using React.js and Chakra UI
 
-This portfolio is built using React.js and Chakra UI. It allows you to quickly create and customize your portfolio website using markdown files.
+This portfolio is built using React.js and Chakra UI. It allows me to quickly create and customize my portfolio website using markdown files.
 
 |    ![experience](example/Experience.gif)    | ![projects](example/Projects.gif) |
 | :-----------------------------------------: | :-------------------------------: |
@@ -121,15 +121,6 @@ You can choose from 10 different colours provided by Chakra UI. Modify the `colo
 // Available Colours:
 // blue, cyan, gray, green, orange, pink, purple, red, teal, yellow
 
-const color = "pink";
+const color = "red";
 ```
 
-## Customizing Design
-
-You can customize the design of your website by modifying the `theme.js` file located in the `src` folder. Refer to the Chakra UI documentation for more information on how to customize your theme.
-
-## Usage
-
-You may use this template for your own portfolio as long as you give me proper credit by linking back to my profile.
-
-For more details on hosting this site, you may refer to [A Step-by-Step Guide: Deploying on Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/)
