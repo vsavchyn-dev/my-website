@@ -94,6 +94,9 @@ export default function Nav({ color }) {
                 <Button variant="ghost" onClick={() => scrollToObjById('about')}>
                   About
                 </Button>
+                <Button variant="ghost" onClick={() => scrollToObjById('studies')}>
+                  Studies
+                </Button>
                 <Button variant="ghost" onClick={() => scrollToObjById('experience')}>
                   Experience
                 </Button>
@@ -122,6 +125,9 @@ export default function Nav({ color }) {
                     <DrawerBody>
                       <Button variant="ghost" onClick={() => scrollToObjById('about')}>
                         About
+                      </Button>
+                      <Button variant="ghost" onClick={() => scrollToObjById('studies')}>
+                        Studies
                       </Button>
                       <Button variant="ghost" onClick={() => scrollToObjById('experience')}>
                         Experience

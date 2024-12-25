@@ -1,0 +1,22 @@
+## Seneca Polytechnic
+- *Computer Programming & Analysis* | Sept'23 - Dec'24
+- ![seneca-image](../assets/seneca-image.jpg)
+- Tags: Seneca Polytechnic
+- Badges:
+  - C/C++ [yellow]
+  - JAVA [yellow]
+  - PYTHON [yellow]
+  - JAVASCRIPT [yellow]
+  - Linux/Ubuntu [yellow]
+  - Software Testing [green]
+  - Cloud Computing [green]
+  - Team Management [green]
+  - Time management [blue]
+  - Project Ownership [blue]
+  - Communication Skills [blue]
+- List Items:
+  - Graduated with an Advanced College Diploma maintaining a GPA of 3.8/4.0
+  - Mastered core programming concepts through intensive coursework in System Programming, Data Structures & Algorithms, and Software Development
+  - Gained hands-on experience with cloud technologies and DevOps practices through Cloud Computing courses
+  - Developed strong foundation in software testing methodologies and project management principles
+  - Applied theoretical knowledge through practical projects including microservices architecture and full-stack applications

@@ -56,7 +56,7 @@ export default function Experience({ whiteModeColor, blackModeColor }) {
           <Stack align="center" direction="row" px={4}>
             <HStack mx={4}>
               <Text color={defaultColor} fontWeight={800}>
-                02
+                03
               </Text>
               <Text fontWeight={800}>Experience</Text>
             </HStack>
@@ -99,10 +99,10 @@ export default function Experience({ whiteModeColor, blackModeColor }) {
                         <List align="left" spacing={3}>
                           {exp.listItems.map((item, index) => (
                             <ListItem key={index}>
-                              <Text align="left">
+                              <Stack direction="row">
                                 <ListIcon boxSize={6} as={ChevronRightIcon} color={hooverColor} />
-                                {item}
-                              </Text>
+                                <Text align="left">{item}</Text>
+                              </Stack>
                             </ListItem>
                           ))}
                         </List>
