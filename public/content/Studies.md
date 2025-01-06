@@ -1,5 +1,5 @@
 ## Seneca Polytechnic
-- *Computer Programming & Analysis* | Sept'23 - Dec'24
+- *Computer Programming & Analysis* | Sept'22 - Dec'24
 - ![seneca-image](../assets/seneca-image.jpg)
 - Tags: Seneca Polytechnic
 - Badges:
