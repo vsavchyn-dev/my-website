@@ -3,9 +3,9 @@ Full-stack web app that fetches data from The Metropolitan Museum of Arts via th
 - ![next-museum](../assets/next-museum.gif)
 - Tags: Web Dev
 - Badges:
-  - NextJS [orange]
-  - ReactJS [orange]
-  - ExpressJS [orange]
+  - Next.JS [orange]
+  - React.JS [orange]
+  - Express.JS [orange]
   - MySQL [orange]
   - MongoDB [orange]
   - Full-stack dev [blue]
@@ -34,7 +34,6 @@ Simple implementation of a blockchain using C++. I've implemented key features, 
   - CMake [orange]
   - vcpkg [orange]
   - Blockchain [red]
-  - Data Structures [red]
   - Software Engineering [blue]
 - Buttons:
   - GitHub [https://github.com/vsavchyn-dev/blockchain]

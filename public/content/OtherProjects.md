@@ -2,8 +2,11 @@
 Front-end app that fetches data from Metropolitan API to check their exponates!
 - Tags: Web Dev
 - Badges:
-  - NextJS [orange]
-  - SQL [orange]
+  - React.JS [orange]
+  - Next.JS [orange]
+  - Express.JS [orange]
+  - MySQL [orange]
+  - MongoDB [orange]
   - Full-stack dev [blue]
 - Buttons:
   - Website [https://next-museum-ruby.vercel.app]
@@ -38,7 +41,7 @@ My first try in game dev competition.
   - GLSL [orange]
   - Visual Studio 2022 [orange]
   - Linear Algebra [red]
-  - Project Oragnization [blue]
+  - Project Management [blue]
 - Buttons:
   - GitHub [https://github.com/vsavchyn-dev/try-out-ubisoft-next-2024]
 
@@ -46,8 +49,8 @@ My first try in game dev competition.
 Web app/dashboard for user to check their posts (like Instagram).
 - Tags: Web Dev
 - Badges:
-  - ExpressJS [orange]
-  - HandlebarsJS [orange]
+  - Express.JS [orange]
+  - Handlebars.JS [orange]
   - Full-stack dev [blue]
 - Buttons:
   - GitHub [https://github.com/vsavchyn-dev/Blog-A-Gramm]
